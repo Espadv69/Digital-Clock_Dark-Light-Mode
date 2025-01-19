@@ -14,3 +14,8 @@ function updateClock() {
 
 setInterval(updateClock, 1000)
 updateClock()
+
+$themeToggleButton.addEventListener('click', () => {
+  isDarkMode = !isDarkMode
+  document.body.className = isDarkMode ? 'dark' : 'light'
+})
